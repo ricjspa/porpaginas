@@ -13,14 +13,11 @@
 
 namespace Porpaginas\Doctrine\ORM;
 
-use Porpaginas\Arrays\ArrayPage;
-use Porpaginas\Result;
-
-use Doctrine\ORM\Query;
+use ArrayIterator;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\ORM\Tools\Pagination\Paginator;
-
-use ArrayIterator;
+use Porpaginas\Arrays\ArrayPage;
+use Porpaginas\Result;
 
 class ORMQueryResult implements Result
 {
@@ -77,7 +74,7 @@ class ORMQueryResult implements Result
 
     /**
      * Return the number of all results in the paginatable.
-
+     *
      * @return int
      */
     public function count()
@@ -95,7 +92,6 @@ class ORMQueryResult implements Result
     public function getIterator()
     {
         $this->loadQuery();
-
         return new ArrayIterator($this->result);
     }
 
