@@ -40,7 +40,7 @@ interface Result extends Countable, IteratorAggregate
     /**
      * Return an iterator over all results of the paginatable.
      *
-     * @return Iterator
+     * @return \Iterator
      */
     public function getIterator();
 }

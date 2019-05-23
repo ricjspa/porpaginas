@@ -90,7 +90,7 @@ class ORMQueryResult implements Result
     /**
      * Return an iterator over all results of the paginatable.
      *
-     * @return Iterator
+     * @return \Iterator
      */
     public function getIterator()
     {

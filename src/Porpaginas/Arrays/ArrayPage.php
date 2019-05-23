@@ -78,7 +78,7 @@ class ArrayPage implements Page
     /**
      * Return an iterator over selected windows of results of the paginatable.
      *
-     * @return Iterator
+     * @return \Iterator
      */
     public function getIterator()
     {
