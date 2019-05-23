@@ -93,7 +93,7 @@ class ORMQueryPage implements Page
             return new ArrayIterator($this->result);
         }
 
-        return $this->paginator;
+        return $this->paginator->getIterator();
     }
 
     /**
