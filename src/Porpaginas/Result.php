@@ -43,4 +43,11 @@ interface Result extends Countable, IteratorAggregate
      * @return \Iterator
      */
     public function getIterator();
+
+    /**
+     * Return an array of all results of the paginatable
+     *
+     * @return mixed
+     */
+    public function getArray();
 }

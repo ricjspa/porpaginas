@@ -84,4 +84,12 @@ class ArrayPage implements Page
     {
         return new ArrayIterator($this->slice);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getArray()
+    {
+        return $this->slice;
+    }
 }

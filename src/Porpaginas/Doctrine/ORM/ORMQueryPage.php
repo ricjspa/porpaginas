@@ -95,4 +95,12 @@ class ORMQueryPage implements Page
 
         return $this->paginator;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getArray()
+    {
+        return iterator_to_array($this->getIterator());
+    }
 }

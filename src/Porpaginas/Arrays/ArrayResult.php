@@ -58,4 +58,12 @@ class ArrayResult implements Result
     {
         return new ArrayIterator($this->data);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getArray()
+    {
+        return $this->data;
+    }
 }

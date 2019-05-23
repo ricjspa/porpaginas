@@ -56,4 +56,11 @@ interface Page extends Countable, IteratorAggregate
      * @return \Iterator
      */
     public function getIterator();
+
+    /**
+     * Return an array over selected windows of results of the paginatable
+     *
+     * @return mixed[]
+     */
+    public function getArray();
 }

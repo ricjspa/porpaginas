@@ -102,4 +102,12 @@ class IteratorPage implements Page
     {
         return $this->iterator;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getArray()
+    {
+        return iterator_to_array($this->iterator);
+    }
 }

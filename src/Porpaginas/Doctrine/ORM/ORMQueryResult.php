@@ -105,4 +105,13 @@ class ORMQueryResult implements Result
             $this->result = $this->query->getResult();
         }
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getArray()
+    {
+        $this->loadQuery();
+        return $this->result;
+    }
 }
